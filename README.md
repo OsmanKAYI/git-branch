@@ -33,4 +33,10 @@ git commit -m "Finish a feature"
 # merge in the $branchName branch
 git checkout main
 git merge $branchName
+
+# delete the merged branch
+git branch -d $branchName
+
+# previous command will delete a local copy of a branch. The branch may still exist in remote repos. To delete a remote branch execute the following
+git push origin --delete $branchName
 ```
