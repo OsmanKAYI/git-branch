@@ -74,3 +74,17 @@ git stash apply stash@{n}
 git stash drop stash@{n}
 #This will remove the specified stash. Be careful, this action cannot be undone.
 ```
+
+### Stash with Branch
+
+```BASH
+git stash save "git stash example"
+git branch "git-stash"
+git checkout git-stash
+git stash apply
+git add .
+git commit -m "git stash example"
+git push origin git-stash
+git checkout main
+git merge git-stash
+```
