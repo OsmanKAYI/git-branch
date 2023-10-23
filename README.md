@@ -1,4 +1,6 @@
-# Branch Deneme
+# Git Examples
+
+## Branch
 
 ```BASH
 # start git in this project
