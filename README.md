@@ -42,3 +42,35 @@ git branch -d $branchName
 # previous command will delete a local copy of a branch. The branch may still exist in remote repos. To delete a remote branch execute the following
 git push origin --delete $branchName
 ```
+
+---
+
+## Stash
+
+```BASH
+# stash your changes
+git stash save "Your stash message"
+
+# switch branches **_optional_**
+# Using git stash in combination with branches can be a powerful way to manage your changes.
+git checkout <branch-name>
+# or
+git switch <branch-name>
+
+# apply the stash
+git stash apply
+```
+
+### Managing Multiple Stashes
+
+```BASH
+# list all stashes
+git stash list
+
+# apply a Specific Stash
+git stash apply stash@{n}
+
+#delete a Stash
+git stash drop stash@{n}
+#This will remove the specified stash. Be careful, this action cannot be undone.
+```
