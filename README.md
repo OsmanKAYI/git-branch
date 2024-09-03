@@ -2,6 +2,8 @@
 
 ## Branch
 
+Git Branch is a way to create new branches. To create a new branch follow the belows:
+
 ```BASH
 # start git in this project
 git init
@@ -46,6 +48,8 @@ git push origin --delete $branchName
 ---
 
 ## Stash
+
+Git Stash is a way to save your changes without losing them.
 
 ```BASH
 # stash your changes
